@@ -1,9 +1,10 @@
+import Titulo from '../Titulo'
 import { ContainerFormulario } from './style'
 
 const Formulario = () => {
   return (
     <ContainerFormulario>
-      <h1>Sing In</h1>
+      <Titulo text="Sing In" />
       <ul>
         <li>
           <a href="#">G</a>

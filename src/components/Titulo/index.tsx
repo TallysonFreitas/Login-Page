@@ -1,11 +1,11 @@
 import { STitulo } from './style'
 
 export type TituloType = {
-  children: string
+  text: string
 }
 
 const Titulo = (props: TituloType) => {
-  return <STitulo>{props.children}</STitulo>
+  return <STitulo>{props.text}</STitulo>
 }
 
 export default Titulo

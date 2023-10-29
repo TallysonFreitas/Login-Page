@@ -6,6 +6,7 @@ export const EstiloGlobal = createGlobalStyle`
   padding:0;
   box-sizing:border-box;
   list-style:none;
+  font-family: 'Montserrat', sans-serif;
 }
 body{
   background: rgb(252,252,255);
