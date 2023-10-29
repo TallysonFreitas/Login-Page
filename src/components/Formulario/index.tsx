@@ -1,24 +1,24 @@
 import Titulo from '../Titulo'
-import { ContainerFormulario } from './style'
+import { ContainerFormulario, SLinkLista, SLista } from './style'
 
 const Formulario = () => {
   return (
     <ContainerFormulario>
       <Titulo text="Sing In" />
-      <ul>
+      <SLista>
         <li>
-          <a href="#">G</a>
+          <SLinkLista href="#">G</SLinkLista>
         </li>
         <li>
-          <a href="#">F</a>
+          <SLinkLista href="#">F</SLinkLista>
         </li>
         <li>
-          <a href="#">G</a>
+          <SLinkLista href="#">G</SLinkLista>
         </li>
         <li>
-          <a href="#">L</a>
+          <SLinkLista href="#">L</SLinkLista>
         </li>
-      </ul>
+      </SLista>
       <p>Lorem ipsum dolor sit amet consectetur.</p>
       <input type="text" />
       <input type="password" />
