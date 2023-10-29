@@ -1,9 +1,10 @@
+import Formulario from '../Formulario'
 import { SContainerItemLoginPage } from './style'
 
 const LoginPageItem = () => {
   return (
     <SContainerItemLoginPage>
-      <h1>oi</h1>
+      <Formulario />
     </SContainerItemLoginPage>
   )
 }
