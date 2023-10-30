@@ -70,9 +70,9 @@ const Formulario = ({ altera, initial }: { altera: any; initial: boolean }) => {
           </SLista>
           <SText tipo="primario">or use your email for registration</SText>
           <SFormulario action="">
-            <SInput type="text" placeholder="Name" />
-            <SInput type="email" placeholder="Email" />
-            <SInput type="password" placeholder="Password" />
+            <SInput required type="text" placeholder="Name" />
+            <SInput required type="email" placeholder="Email" />
+            <SInput required type="password" placeholder="Password" />
             <SSingButton tipo="primario" type="submit" onSubmit={altera}>
               SING UP
             </SSingButton>
@@ -141,8 +141,8 @@ const Formulario = ({ altera, initial }: { altera: any; initial: boolean }) => {
           </SLista>
           <SText tipo="primario">or use your email password</SText>
           <SFormulario action="">
-            <SInput type="email" placeholder="Email" />
-            <SInput type="password" placeholder="Password" />
+            <SInput required type="email" placeholder="Email" />
+            <SInput required type="password" placeholder="Password" />
             <a href="#">
               <SText tipo="primario">Forget Yout Password?</SText>
             </a>
