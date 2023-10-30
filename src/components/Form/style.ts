@@ -22,7 +22,7 @@ export const SInput = styled.input`
 `
 
 export const SSingButton = styled.button`
-  background-color: #71e;
+  background-color: rgba(88, 39, 146, 1);
   color: white;
   border-radius: 8px;
   width: 50%;

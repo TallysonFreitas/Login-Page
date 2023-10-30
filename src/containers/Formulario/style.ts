@@ -22,4 +22,16 @@ export const SLinkLista = styled.a`
   border: 1px solid #888;
   border-radius: 8px;
   font-weight: bold;
+  display: flex;
+  transition: scale ease 0.2s;
+  &:hover {
+    scale: 1.1;
+  }
+`
+
+export const SSvgIcon = styled.svg`
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
 `
