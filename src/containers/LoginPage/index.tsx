@@ -1,4 +1,4 @@
-import LoginPageItem from '../../components/LoginPageItem'
+import LoginPageItem from '../LoginPageItem'
 import { SContainerLoginPage } from './style'
 
 const LoginPage = () => {
