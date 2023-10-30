@@ -4,14 +4,14 @@ import Register from '../RegisterDiv'
 import { SContainerItemLoginPage } from './style'
 
 const LoginPageItem = () => {
-  const [registerPage, setRegisterPage] = useState(false)
+  const [posicaoFinal, setPosicaoFinal] = useState(false)
   const handleClickChange = () => {
-    setRegisterPage(!registerPage)
+    setPosicaoFinal(!posicaoFinal)
   }
   return (
     <SContainerItemLoginPage>
-      <Formulario altera={handleClickChange} initial={registerPage} />
-      <Register altera={handleClickChange} initial={registerPage} />
+      <Formulario altera={handleClickChange} initial={posicaoFinal} />
+      <Register altera={handleClickChange} initial={posicaoFinal} />
     </SContainerItemLoginPage>
   )
 }

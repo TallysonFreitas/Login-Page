@@ -9,9 +9,12 @@ export const ContainerFormulario = styled.div<PositionDivType>`
   align-items: center;
   justify-content: center;
   position: absolute;
-  transform: ${(props) => props.position === true && 'translateX(100%)'};
+  right: ${(props) => props.position === true && '-50%'};
+  left: ${(props) => props.position === false && '-50%'};
+  transform: ${(props) =>
+    props.position === true ? 'translateX(-100%)' : 'translateX(100%)'};
   top: 0;
-  transition: all ease 1s;
+  transition: transform ease 1s;
 `
 
 export const SLista = styled.ul`
