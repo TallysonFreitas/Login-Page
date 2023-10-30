@@ -4,7 +4,7 @@ import { SText } from '../../components/Text/style'
 import { STitulo } from '../../components/Titulo/style'
 import { ContainerFormulario, SLinkLista, SLista, SSvgIcon } from './style'
 
-const Formulario = () => {
+const Formulario = ({ altera, initial }: { altera: any; initial: boolean }) => {
   return (
     <ContainerFormulario>
       <STitulo tipo="primario">Sing In</STitulo>
@@ -73,7 +73,7 @@ const Formulario = () => {
         <a href="#">
           <SText tipo="primario">Forget Yout Password?</SText>
         </a>
-        <SSingButton tipo="primario" type="submit">
+        <SSingButton tipo="primario" type="submit" onSubmit={altera}>
           SING IN
         </SSingButton>
       </SFormulario>
