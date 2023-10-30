@@ -4,4 +4,6 @@ export type TextType = {
   tipo: 'primario' | 'secundario'
 }
 
-export const SText = styled.p<TextType>``
+export const SText = styled.p<TextType>`
+  color: ${(props) => (props.tipo == 'primario' ? '#000' : '#fff')};
+`

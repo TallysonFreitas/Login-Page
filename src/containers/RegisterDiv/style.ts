@@ -13,4 +13,9 @@ export const SRegisterDiv = styled.div`
     rgba(70, 49, 94, 1) 100%
   );
   border-radius: 40% 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 `

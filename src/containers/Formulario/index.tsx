@@ -1,4 +1,5 @@
-import { SFormulario, SInput, SSingButton } from '../../components/Form/style'
+import { SSingButton } from '../../components/Button/style'
+import { SFormulario, SInput } from '../../components/Form/style'
 import { SText } from '../../components/Text/style'
 import { STitulo } from '../../components/Titulo/style'
 import { ContainerFormulario, SLinkLista, SLista, SSvgIcon } from './style'
@@ -6,7 +7,7 @@ import { ContainerFormulario, SLinkLista, SLista, SSvgIcon } from './style'
 const Formulario = () => {
   return (
     <ContainerFormulario>
-      <STitulo>Sing In</STitulo>
+      <STitulo tipo="primario">Sing In</STitulo>
       <SLista>
         <li>
           <SLinkLista href="#">
@@ -72,7 +73,9 @@ const Formulario = () => {
         <a href="#">
           <SText tipo="primario">Forget Yout Password?</SText>
         </a>
-        <SSingButton type="submit">SING IN</SSingButton>
+        <SSingButton tipo="primario" type="submit">
+          SING IN
+        </SSingButton>
       </SFormulario>
     </ContainerFormulario>
   )

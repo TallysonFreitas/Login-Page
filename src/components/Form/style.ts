@@ -20,15 +20,3 @@ export const SInput = styled.input`
     border: none;
   }
 `
-
-export const SSingButton = styled.button`
-  background-color: rgba(88, 39, 146, 1);
-  color: white;
-  border-radius: 8px;
-  width: 50%;
-  padding: 16px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-`
