@@ -10,6 +10,8 @@ const initialState = {
   ]
 }
 
+export type UserType = (typeof initialState.users)[0]
+
 const userSlice = createSlice({
   name: 'users',
   initialState,

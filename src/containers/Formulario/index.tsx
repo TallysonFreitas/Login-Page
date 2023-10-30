@@ -1,10 +1,26 @@
+import { useSelector, useDispatch } from 'react-redux'
 import { SSingButton } from '../../components/Button/style'
 import { SFormulario, SInput } from '../../components/Form/style'
 import { SText } from '../../components/Text/style'
 import { STitulo } from '../../components/Titulo/style'
 import { ContainerFormulario, SLinkLista, SLista, SSvgIcon } from './style'
+import { UserType, introduce } from '../../redux/reducers/userSlice'
+import { useState } from 'react'
 
 const Formulario = ({ altera, initial }: { altera: any; initial: boolean }) => {
+  const dispatch = useDispatch()
+
+  const users = useSelector((state: any) => state.user.users)
+
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const ProcuraUsuario = () => {
+    users.filter(
+      (each: UserType) => each.email == email && each.password == password
+    )
+  }
+
   return (
     <ContainerFormulario position={initial}>
       {initial === true ? (
@@ -141,12 +157,32 @@ const Formulario = ({ altera, initial }: { altera: any; initial: boolean }) => {
           </SLista>
           <SText tipo="primario">or use your email password</SText>
           <SFormulario action="">
-            <SInput required type="email" placeholder="Email" />
-            <SInput required type="password" placeholder="Password" />
+            <SInput
+              required
+              type="email"
+              placeholder="Email"
+              onChange={(e) => {
+                setEmail(e.target.value)
+              }}
+            />
+            <SInput
+              required
+              type="password"
+              placeholder="Password"
+              onChange={(e) => {
+                setPassword(e.target.value)
+              }}
+            />
             <a href="#">
               <SText tipo="primario">Forget Yout Password?</SText>
             </a>
-            <SSingButton tipo="primario" type="submit" onSubmit={altera}>
+            <SSingButton
+              tipo="primario"
+              type="submit"
+              onSubmit={(e) => {
+                altera(), ProcuraUsuario(), e.preventDefault()
+              }}
+            >
               SING IN
             </SSingButton>
           </SFormulario>
