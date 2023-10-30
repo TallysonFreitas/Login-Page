@@ -25,6 +25,9 @@ const Formulario = () => {
       <SFormulario action="">
         <SInput type="email" placeholder="Email" />
         <SInput type="password" placeholder="Password" />
+        <a href="#">
+          <SText tipo="primario">Forget Yout Password?</SText>
+        </a>
         <SSingButton type="submit">SING IN</SSingButton>
       </SFormulario>
     </ContainerFormulario>

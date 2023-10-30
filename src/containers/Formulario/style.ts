@@ -12,7 +12,7 @@ export const ContainerFormulario = styled.div`
 export const SLista = styled.ul`
   display: flex;
   gap: 40px;
-  margin: 32px 0;
+  margin: 40px 0;
 `
 
 export const SLinkLista = styled.a`
