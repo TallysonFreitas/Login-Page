@@ -1,3 +1,4 @@
+import { SText } from '../Text/style'
 import Titulo from '../Titulo'
 import { ContainerFormulario, SLinkLista, SLista } from './style'
 
@@ -19,11 +20,12 @@ const Formulario = () => {
           <SLinkLista href="#">L</SLinkLista>
         </li>
       </SLista>
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
-      <input type="text" />
-      <input type="password" />
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
-      <button>Sing In</button>
+      <SText tipo="primario">or use your email password</SText>
+      <form action="">
+        <input type="text" />
+        <input type="password" />
+        <button type="submit">Sing In</button>
+      </form>
     </ContainerFormulario>
   )
 }
