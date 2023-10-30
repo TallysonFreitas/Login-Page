@@ -1,4 +1,4 @@
-import Formulario from '../Formulario'
+import Formulario from '../../containers/Formulario'
 import { SContainerItemLoginPage } from './style'
 
 const LoginPageItem = () => {
