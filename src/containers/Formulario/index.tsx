@@ -73,7 +73,13 @@ const Formulario = ({ altera, initial }: { altera: any; initial: boolean }) => {
             <SInput required type="text" placeholder="Name" />
             <SInput required type="email" placeholder="Email" />
             <SInput required type="password" placeholder="Password" />
-            <SSingButton tipo="primario" type="submit" onSubmit={altera}>
+            <SSingButton
+              tipo="primario"
+              type="submit"
+              onSubmit={() => {
+                altera()
+              }}
+            >
               SING UP
             </SSingButton>
           </SFormulario>
@@ -146,7 +152,13 @@ const Formulario = ({ altera, initial }: { altera: any; initial: boolean }) => {
             <a href="#">
               <SText tipo="primario">Forget Yout Password?</SText>
             </a>
-            <SSingButton tipo="primario" type="submit" onSubmit={altera}>
+            <SSingButton
+              tipo="primario"
+              type="submit"
+              onSubmit={(e) => {
+                altera(), e.preventDefault()
+              }}
+            >
               SING IN
             </SSingButton>
           </SFormulario>
