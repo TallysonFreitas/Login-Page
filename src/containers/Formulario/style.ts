@@ -19,9 +19,11 @@ export const ContainerFormulario = styled.div<PositionDivType>`
     position: relative;
     width: 100vw;
     transform: ${(props) =>
-      props.position === true ? 'translateY(50%)' : 'translateY(0%)'};
+      props.position === true ? 'translateY(50%)' : 'translateY(70vh)'};
     right: 0%;
     left: 0%;
+    bottom: ${(props) => props.position === true && '-100%'};
+    top: ${(props) => props.position === false && '-70vh'};
   }
 `
 

@@ -69,7 +69,7 @@ const Formulario = ({ altera, initial }: { altera: any; initial: boolean }) => {
             </li>
           </SLista>
           <SText tipo="primario">or use your email for registration</SText>
-          <SFormulario action="">
+          <SFormulario action="/pagina-mata">
             <SInput required type="text" placeholder="Name" />
             <SInput required type="email" placeholder="Email" />
             <SInput required type="password" placeholder="Password" />
@@ -146,7 +146,7 @@ const Formulario = ({ altera, initial }: { altera: any; initial: boolean }) => {
             </li>
           </SLista>
           <SText tipo="primario">or use your email password</SText>
-          <SFormulario action="">
+          <SFormulario action="/pagina-processa-dados-do-form">
             <SInput required type="email" placeholder="Email" />
             <SInput required type="password" placeholder="Password" />
             <a href="#">
