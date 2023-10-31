@@ -15,6 +15,14 @@ export const ContainerFormulario = styled.div<PositionDivType>`
     props.position === true ? 'translateX(-100%)' : 'translateX(100%)'};
   top: 0;
   transition: transform ease 1s;
+  @media (max-width: 768px) {
+    position: relative;
+    width: 100vw;
+    transform: ${(props) =>
+      props.position === true ? 'translateY(50%)' : 'translateY(0%)'};
+    right: 0%;
+    left: 0%;
+  }
 `
 
 export const SLista = styled.ul`

@@ -26,4 +26,12 @@ export const SRegisterDiv = styled.div<PositionDivType>`
   gap: 24px;
   transition: all ease 1s;
   transform: ${(props) => props.position && 'translateX(-100%)'};
+  @media (max-width: 768px) {
+    position: relative;
+    border-radius: ${(props) =>
+      props.position == false ? '40% 20% 0 0 ' : ' 0 0 20% 40% '};
+    transform: ${(props) => props.position && 'translatey(-200%)'};
+    width: 100%;
+    height: 50vh;
+  }
 `
