@@ -15,7 +15,13 @@ export const ContainerFormulario = styled.div<PositionDivType>`
     props.position === true ? 'translateX(-100%)' : 'translateX(100%)'};
   top: 0;
   transition: transform ease 1s;
+  @media (max-width: 900px) {
+    scale: 0.8;
+    transform: ${(props) =>
+      props.position === true ? 'translateX(-120%)' : 'translateX(120%)'};
+  }
   @media (max-width: 768px) {
+    scale: 0.8;
     position: relative;
     width: 100vw;
     transform: ${(props) =>
@@ -23,7 +29,7 @@ export const ContainerFormulario = styled.div<PositionDivType>`
     right: 0%;
     left: 0%;
     bottom: ${(props) => props.position === true && '-100%'};
-    top: ${(props) => props.position === false && '-70vh'};
+    top: ${(props) => props.position === false && '-60vh'};
   }
 `
 

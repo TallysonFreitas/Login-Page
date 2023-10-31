@@ -9,12 +9,14 @@ export const SContainerItemLoginPage = styled.div`
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
+  @media (max-width: 1024px) {
+    border-radius: 0px;
+    height: 100vh;
+    max-height: 100vh;
+    box-shadow: none;
+  }
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    max-height: 100vh;
-    border-radius: 0px;
-    box-shadow: none;
   }
 `
