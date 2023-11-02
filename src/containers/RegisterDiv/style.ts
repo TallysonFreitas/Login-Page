@@ -30,11 +30,11 @@ export const SRegisterDiv = styled.div<PositionDivType>`
     position: relative;
     border-radius: ${(props) =>
       props.position == false ? '40% 20% 0 0 ' : ' 0 0 20% 40% '};
-    transform: ${(props) => props.position && 'translatey(-271%)'};
+    transform: ${(props) => props.position && 'translatey(-70vh)'};
     width: 100%;
     height: 50vh;
   }
   @media (max-width: 700px) {
-    transform: ${(props) => props.position && 'translatey(-72vh)'};
+    transform: ${(props) => props.position && 'translatey(-70vh)'};
   }
 `
